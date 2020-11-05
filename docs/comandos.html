@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="es">
+    <meta charset="UTF-8">
+    <meta name="description" content="Un bot en español que te ayudará a distribuir tareas grupales por sorteo."/>
+    <meta name="og:image" content="distribot.png">
+    <link rel="icon" type="image/png" href="distribot.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<title>DistriBot</title>
+<body>
+<a href="index.html"><img src="distribot.png" class="center"></a>
+<h1>Comandos</h1>
+<h4>A continuación veremos todos los comandos<br>que puedo ejecutar para ayudarte en tu server:</h4><br>
+<h3><strong>%sorteo</strong> (número de participantes)<br>(número de ejercicios) (ejercicio de inicio)</h3>
+<p>Sortea, entre la cantidad de participantes ingresados,<br>una cantidad de ejercicios de una tarea
+    grupal,<br>comenzando desde un número de ejercicio determinado,<br>por ejemplo:<br><br>
+    <strong>%sorteo</strong> 10 20 5</p>
+<p><em>(Sortea entre <strong>10 participantes</strong> la cantidad de<br><strong>20 ejercicios</strong> comenzando desde
+        el <strong>ejercicio 5</strong>).<br></em>
+    <strong><br>NOTA</strong>: En caso de que el número de participantes<br>exceda el número de miembros (excluyendo
+    bots)<br>del canal de texto en el que se invoca el comando,<br>la ejecución del sorteo fallará.</p>
+<h2><strong><br>%arremedar</strong> @MencionUsuario</h2>
+<p>Repite el último mensaje del usuario mencionado<br>en el canal donde se invocó el comando,<br>sustituyendo todas las
+    vocales por <strong>i</strong>.</p>
+<h2><strong><br>%miembros</strong></h2>
+<p>Retorna la cantidad de <strong>miembros elegibles</strong><br>para un sorteo de ejercicios en el contexto<br>del
+    canal donde se invocó el comando.</p>
+<h2><strong><br>%prueba</strong></h2>
+<p>Retorna el siguiente mensaje:<br><br>
+    <i>&quot;Hola! Soy DistriBot :) Un bot en desarrollo<br>que permitirá sortear tareas grupales.&quot;.</i><br><br>Con
+    el fin de probar el funcionamiento del bot.</p>
+<h2><br>¿Te convencí?</h2>
+<a href="https://discord.com/oauth2/authorize?client_id=760052389058576385&permissions=8&scope=bot" class="linksimple">
+    <div class="botoncito">
+        <h2>Añádeme a tu server de Discord</h2>
+    </div>
+</a>
+<a href="https://github.com/tecncr/distribot"><h1 class="grande"><i class="fab fa-github"></i></h1></a>
+</body>
+</html>
