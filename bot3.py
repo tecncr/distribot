@@ -73,6 +73,10 @@ async def arremedar(ctx, mencion):
         mensajeError = discord.Embed(title="Oh no :(", description="No pude arremedar el último mensaje de ese usuario.")
         await ctx.send(embed=mensajeError)
 
+@bot.command()
+async def ayuda(ctx):
+    await ctx.send('Puedes ver todos los comandos que puedo ejecutar aquí ;)\nhttps://distribot.xyz/comandos.html')
+
 @bot.event
 async def on_ready():
     print("Bot iniciado y listo para usar :D")

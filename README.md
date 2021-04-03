@@ -1,4 +1,4 @@
-# DistriBot (v0.5)
+# DistriBot (v0.6)
 Un simple bot de sorteo de ejercicios de tareas grupales en español, escrito en Python 3 utilizando Discord.py (https://github.com/Rapptz/discord.py)
 
 ## Comandos disponibles (por ahora)
@@ -20,6 +20,22 @@ Un simple bot de sorteo de ejercicios de tareas grupales en español, escrito en
 
 *Con el fin de probar el funcionamiento del bot.*
 
-## Implementación del bot
+> **d!ayuda**
 
-Colocar el token en la primera línea del archivo **token.txt** y ejecutar/desplegar el archivo **bot3.py**
+*Retorna un link a la página de ayuda https://distribot.xyz/comandos.html para ver los comandos disponibles*
+
+## Cómo correr su propia instancia
+**Con Docker:**
+- `git clone https://github.com/tecncr/distribot`
+- `cd distribot`
+- `echo (token dado por discord) > token.txt`
+- `docker build -t distribot .`
+*(no olvidar el punto al final)*
+- `docker run -it distribot`
+
+**Con su intérprete de Python local:**
+- `git clone https://github.com/tecncr/distribot`
+- `cd distribot`
+- `pip install -r requirements.txt`
+- `echo (token dado por discord) > token.txt`
+- `python3 bot3.py`
